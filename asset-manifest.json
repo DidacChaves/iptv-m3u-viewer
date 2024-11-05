@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iptv-visor/static/css/main.dee68ae6.css",
+    "main.js": "/iptv-visor/static/js/main.d22e0919.js",
+    "index.html": "/iptv-visor/index.html",
+    "main.dee68ae6.css.map": "/iptv-visor/static/css/main.dee68ae6.css.map",
+    "main.d22e0919.js.map": "/iptv-visor/static/js/main.d22e0919.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dee68ae6.css",
+    "static/js/main.d22e0919.js"
+  ]
+}
