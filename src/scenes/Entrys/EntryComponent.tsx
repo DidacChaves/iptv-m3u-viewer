@@ -19,7 +19,7 @@ export const EntryComponent = ({ entry }: EntryComponentProps) => {
     const [imageSrc, setImageSrc] = useState(entry.logo || '/iptv-visor/assets/tvLogo.png'); // Ruta de la imagen por defecto
     const handleError = () => {
         // Cambiar a la imagen de respaldo si la imagen no se puede cargar
-        setImageSrc('/assets/tvLogo.png');
+        setImageSrc('/iptv-visor/assets/tvLogo.png');
     };
     const onClick = useCallback(() => {
         const newWindow = window.open(entry.url, '_blank');

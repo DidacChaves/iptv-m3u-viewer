@@ -14,11 +14,11 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-            # Instala Node.js 16
-            - name: Set up Node.js 16
+            # Instala Node.js 18
+            - name: Set up Node.js 18
               uses: actions/setup-node@v2
               with:
-                  node-version: '16'
+                  node-version: '18'
 
             - name: Install dependencies
               run: npm install
@@ -37,11 +37,11 @@ jobs:
             - name: Checkout 🛎️
               uses: actions/checkout@v2.3.1
 
-            # Instala Node.js 16
-            - name: Set up Node.js 16
+            # Instala Node.js 18
+            - name: Set up Node.js 18
               uses: actions/setup-node@v2
               with:
-                  node-version: '16'
+                  node-version: '18'
 
             - name: Install
               run: npm install
@@ -63,11 +63,11 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-            # Instala Node.js 16
-            - name: Set up Node.js 16
+            # Instala Node.js 18
+            - name: Set up Node.js 18
               uses: actions/setup-node@v2
               with:
-                  node-version: '16'
+                  node-version: '18'
 
             - name: Set up QEMU
               uses: docker/setup-qemu-action@v1
