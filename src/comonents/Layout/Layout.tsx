@@ -13,6 +13,6 @@ export const Layout: React.FC = ({ children }) => {
                 <div className={style.contentContainer}>{children}</div>
             </div>
             <Snackbar />
-        </div>
+        </div >
     );
 };

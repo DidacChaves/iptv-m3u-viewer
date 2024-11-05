@@ -11,7 +11,7 @@ export interface Entry {
     name: string,
     fileName: string,
     language: string,
-    contry: string,
+    country: string,
     url: string,
 }
 
@@ -27,12 +27,12 @@ model File {
     name String
     entrys Entry[]
   }
-  
+
   model Group {
     name String @id
     entrys Entry[]
   }
-  
+
   model Entry {
     id Int @id @default(autoincrement())
     file File @relation(fields: [fileId], references: [id])
@@ -43,7 +43,7 @@ model File {
     name String
     url String
   }
-  
+
   model Filter {
     id Int @id @default(autoincrement())
     groupName String?

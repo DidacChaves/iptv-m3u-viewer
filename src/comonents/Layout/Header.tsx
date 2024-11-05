@@ -8,7 +8,7 @@ import {
     Toolbar,
     Typography,
 } from '@material-ui/core';
-import { FilterList, Description } from '@material-ui/icons';
+import { Description } from '@material-ui/icons';
 import ListIcon from '@material-ui/icons/List';
 import { urls } from 'services/urls';
 import { useHistory } from 'react-router';
@@ -31,24 +31,24 @@ export const Header = () => {
         {
             url: urls.home,
             icon: <ListIcon />,
-            text: 'Channels',
+            text: 'Canals',
         },
-        {
-            url: urls.filters,
-            icon: <FilterList />,
-            text: 'Filters',
-        },
+        // {
+        //     url: urls.filters,
+        //     icon: <FilterList />,
+        //     text: 'Filters',
+        // },
         {
             url: urls.files,
             icon: <Description />,
-            text: 'Files',
+            text: 'Arxiu',
         },
     ];
 
     return (
         <AppBar position="static">
             <Toolbar>
-                <Typography variant="h6" className={overrideStyle.title} >IPTV M3U Viewer</Typography>
+                <Typography variant="h6" className={overrideStyle.title} >Visor IPTV</Typography>
                 {navigationItems.map((item) => (
                     <div key={item.text} onClick={() => history.push(item.url)}>
                         <MenuItem>

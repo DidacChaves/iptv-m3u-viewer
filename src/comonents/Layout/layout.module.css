@@ -1,6 +1,7 @@
 .container {
     width: 100vw;
     overflow: hidden;
+    background-color: #303030;
 }
 
 .header {

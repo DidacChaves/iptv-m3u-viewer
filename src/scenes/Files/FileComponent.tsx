@@ -23,6 +23,7 @@ export const FileComponent = ({ file }: FileComponentProps) => {
             }
             fileDownload(data, file.name);
         } catch (e) {
+            console.error(e);
             dispatch(snackBarMessagePublished({
                 message: 'Failed to download file',
                 severity: 'error',

@@ -27,7 +27,7 @@ export const FileUploader = () => {
         <input type='file' name='file' onChange={onFileChange} accept='.m3u' id="contained-button-file" className={style.fileUploadInput} />
         <label htmlFor="contained-button-file">
             <Button variant='contained' color='primary' component="span">
-                Upload File
+                Pujar canals
             </Button>
         </label>
     </div>

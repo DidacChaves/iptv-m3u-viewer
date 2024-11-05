@@ -9,16 +9,23 @@ import { loadApp } from 'store/reducer';
 import PrivateRoute from 'comonents/PrivateRoute';
 import { EntrysPage } from 'scenes/Entrys/EntrysPage';
 import { FiltersPage } from 'scenes/Filters/FiltersPage';
+import {createTheme, ThemeProvider} from "@material-ui/core";
 
 function App() {
     const loaded = useSelector(selectAppIsLoaded);
     const dispatch = useDispatch();
+    const darkTheme = createTheme({
+        palette: {
+            type: 'dark',
+        },
+    });
     useEffect(() => {
         if (!loaded) {
             dispatch(loadApp());
         }
     }, [loaded]);
     return (
+        <ThemeProvider theme={darkTheme}>
         <Layout>
             <Switch>
                 <PrivateRoute path={urls.files} component={Files} />
@@ -26,6 +33,7 @@ function App() {
                 <PrivateRoute component={EntrysPage} />
             </Switch>
         </Layout>
+        </ThemeProvider>
     );
 }
 
