@@ -63,7 +63,7 @@ jobs:
           build-args: |
             NODE_ENV=production
           push: true
-          tags: didacchaves/iptv-viewer:latest
+          tags: hex62/iptv-viewer:latest
           platforms: linux/amd64,linux/arm64
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
