@@ -63,7 +63,7 @@ jobs:
           build-args: |
             NODE_ENV=production
           push: true
-          tags: noerls/iptv-m3u-viewer:latest
+          tags: didacchaves/iptv-viewer:latest
           platforms: linux/amd64,linux/arm64
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
