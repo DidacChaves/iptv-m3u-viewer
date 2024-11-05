@@ -14,6 +14,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended', // Uses the recommended rules from @typescript-eslint/eslint-plugin
     ],
     rules: {
+        '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         'react/prop-types': 'off', // issue with React.FC
         // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
