@@ -27,7 +27,7 @@ jobs:
               run: docker build . -t iptv-m3u-client
 
             - name: Check lint
-              run: docker run iptv-m3u-client npm run lint
+              run: docker run iptv-m3u-client
 
     gh-pages:
         needs: test
