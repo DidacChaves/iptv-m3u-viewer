@@ -14,6 +14,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended', // Uses the recommended rules from @typescript-eslint/eslint-plugin
     ],
     rules: {
+        '@typescript-eslint/no-duplicate-enum-values': 'off',
         '@typescript-eslint/no-array-constructor': 'off',
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
